@@ -1,9 +1,9 @@
 #include "swo_thread.h"
 #include "common_utils.h"
 #include "usb_composite.h"
-#include "CMSIS-DAP\Driver_USART.h"
-#include "CMSIS-DAP\cmsis_os2.h"
-#include "CMSIS-DAP\DAP.h"
+#include "CMSIS-DAP/Driver_USART.h"
+#include "CMSIS-DAP/cmsis_os2.h"
+#include "CMSIS-DAP/DAP.h"
 
 static SWO_UART_STAT swo_uart_stat = {0};
 static SWO_USB_STAT swo_usb_stat = {0};

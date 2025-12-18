@@ -10,7 +10,7 @@
     <option key="#RTOS#" value="rtos.awsfreertos"/>
     <option key="#pinconfiguration#" value="R7FA4M2AD3CFP.pincfg"/>
     <option key="#FSPVersion#" value="4.6.0"/>
-    <option key="#ConfigurationFragments#" value="Renesas##BSP##Board##ra4m2_ek##"/>
+    <option key="#ConfigurationFragments#" value="Renesas##BSP##Board##ra4m2_ek##|Block##BSP##Board##x2c_automation##|Block##BSP##Board##X2C_AUTOMATION##"/>
     <option key="#SELECTED_TOOLCHAIN#" value="gcc-arm-embedded"/>
     <option key="#ToolchainVersion#" value="10.3.1.20210824"/>
   </generalSettings>
