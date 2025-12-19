@@ -55,8 +55,8 @@ This information includes:
 #include "bsp_pin_cfg.h"
 
 extern bsp_leds_t g_bsp_leds;
-#define LED_INDEX_VCOM 0      // Blue: EK-RA4M2 LED1
-#define LED_INDEX_RUNNING 1   // Green: EK-RA4M2 LED2
+#define LED_INDEX_RUNNING 0      // Red: our only status LED
+#define LED_INDEX_VCOM 1   // Green: EK-RA4M2 LED2
 #define LED_INDEX_CONNECTED 2 // Red: EK-RA4M2 LED3
 
 /// Processor Clock of the Cortex-M MCU used in the Debug Unit.
@@ -77,7 +77,7 @@ extern bsp_leds_t g_bsp_leds;
 
 /// Indicate that JTAG communication mode is available at the Debug Port.
 /// This information is returned by the command \ref DAP_Info as part of <b>Capabilities</b>.
-#define DAP_JTAG                1               ///< JTAG Mode: 1 = available, 0 = not available.
+#define DAP_JTAG                0               ///< JTAG Mode: 1 = available, 0 = not available.
 
 /// Configure maximum number of JTAG devices on the scan chain connected to the Debug Access Port.
 /// This setting impacts the RAM requirements of the Debug Unit. Valid range is 1 .. 255.
@@ -436,7 +436,6 @@ __STATIC_FORCEINLINE void     PIN_SWDIO_OUT_DISABLE (void) {
 __STATIC_FORCEINLINE uint32_t PIN_TDI_IN  (void) {
   uint32_t val;
 
-  val = R_BSP_PinRead(PIN_CMSIS_DAP_TDI);
   return val;
 
 }

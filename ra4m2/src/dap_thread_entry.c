@@ -1,8 +1,8 @@
 #include "dap_thread.h"
 #include "common_utils.h"
 #include "usb_composite.h"
-#include "CMSIS-DAP\DAP_config.h"
-#include "CMSIS-DAP\DAP.h"
+#include "CMSIS-DAP/DAP_config.h"
+#include "CMSIS-DAP/DAP.h"
 #include "r_usb_pcdc_cfg.h"
 #include "CMSIS-DAP/Driver_USART.h"
 
